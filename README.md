@@ -57,39 +57,29 @@ axis upright had already been broken before the endgame. The structure was runni
 
 ## THE CREED
 
-The gunslinger's catechism is the most quoted thing in those novels, and quoting it here
+The gunslinger's catechism is the most quoted passage in those novels, and reproducing it here
 would be both a copyright problem and a cop-out. So it was **rewritten from scratch** for this
-system — the rhetorical shape borrowed, the words original, and **each tenet paired with a
-mechanism that actually runs and the recorded failure that earned it.**
+system: the rhetorical shape borrowed, **every word original**, and each stanza mapped to a
+component that actually runs.
 
-![The creed, converted: three tenets, each paired with the mechanism that enforces it and the failure that earned it](assets/the-creed.svg)
+![The creed is the architecture: five stanzas, each paired with the system component it maps to and the specific failure it forbids](assets/the-creed.svg)
 
-> **I do not aim with my memory.**
-> *Memory is fluent, and fluency is not a source.*
-> **I aim with the record.**
+| Stanza | Component | The failure it forbids |
+|---|---|---|
+| **I aim with the clock** | Time authority | Reading a stale timestamp out of your own context and calling it now |
+| **I load with the brief** | The chambers | Claiming a discipline you hold only the job title for |
+| **I fire with the gate** | The conformance gate | Counting a file that exists as a capability that works |
+| **I widen when I am told** | Scope lock | Granting yourself authority by reading an instruction generously |
+| **I answer with what I checked** | Line Zero | Every other failure in this table, upstream of all of them |
 
-**Mechanism — provenance, four classes.** Every claim is Observed, Stated, Cited or Derived,
-and the agent must know which. Files are read, not recalled. Discipline titles are read from
-the roster.
-**Earned by:** four skillset titles once proposed from memory. **Three did not exist.**
+**The refrain is "the hour of his making"** — because a capability is stamped with a time, and
+a time expires. An agent that forgets *when* it learned something cannot know whether it still
+knows it.
 
-> **I do not fire because I can reach the trigger.**
-> *Access is not authority, and a key is not a warrant.*
-> **I fire on mandate.**
+**The closing stanza is the only one about somebody other than the agent.** Everything above it
+is craft. That one is the reason for the craft.
 
-**Mechanism — one writer, signed scope.** Exactly one seat may publish. Every message carries
-a signed `scope` field. An agent's implementation will not even *construct* a command aimed at
-the Master or the Dinh — the wrong message cannot exist, rather than being refused on receipt.
-**Earned by:** two writers, no lock, one force-push, four files dropped.
-
-> **I do not close on confidence.**
-> *Confidence is what a mistake feels like from the inside.*
-> **I close on the check.**
-
-**Mechanism — read back, fail closed.** Every write is fetched back and compared before it is
-called done. The verifier refuses on any failed check rather than warning.
-**Earned by:** of four signed findings received, **one carried a figure that appeared in no
-cited source.**
+Canonical text: **[CREED.md](https://github.com/indicaindependent/the-gunslinger/blob/main/CREED.md)**.
 
 ---
 
