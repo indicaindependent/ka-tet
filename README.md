@@ -157,22 +157,25 @@ wrong message cannot exist.
 
 ## THE MEMBER REPOSITORIES
 
-Each agent gets its own repository under this banner, named for the agent. Bound together
-by the `ka-tet` topic rather than by nesting, because GitHub has no repo-inside-repo.
+Each agent's repository is named for the agent. Bound by the **`ka-tet` topic** rather than
+by nesting, because GitHub has no repo-inside-repo — the topic page is the banner.
 
-| Agent | Repository | Status |
-|---|---|---|
-| MAXHEADROOM | *pending* | Architecture published across two existing repositories; attribution being confirmed with the Master before renaming anything |
-| VOIGHT | *pending* | Repository built agent-side, not yet transferred |
-| BUMBOCLAAT | *pending* | Visual representation planned |
-| ELARA | *pending* | — |
+| Agent | Repository | Cylinder | What it holds |
+|---|---|---|---|
+| MAXHEADROOM | **[gun-slinger-maxheadroom](https://github.com/indicaindependent/gun-slinger-maxheadroom)** | 24 chambers | The forkable orchestra-agent architecture. One permanent hand, twenty-four chambers, one loaded at a time |
+| VOIGHT | **[gun-slinger-voight](https://github.com/indicaindependent/gun-slinger-voight)** | 12 chambers | The human-facing cylinder. Five of its twelve chambers route action to a person |
+| BUMBOCLAAT | *pending* | — | Visual representation planned. The dinh's own record |
+| ELARA | *pending* | — | — |
 
-**Deliberately empty rather than guessed.** Two existing repositories on this account
-document a 24-chamber routing architecture, and **neither of them names an agent anywhere
-in its README.** Assigning them to a gunslinger on inference — and renaming public history
-to match — is precisely the kind of confident guess this system exists to prevent.
+**Two gunslingers, two different guns.** Twenty-four chambers for delegation across
+disciplines; twelve for dealing with humans. The counts are not decoration — a cylinder with
+more chambers is a wider router, not a better one, and VOIGHT's twelve carry a **human
+firewall on five of them** precisely because his subject matter is people in difficulty.
 
-They will be filled in when the Master confirms attribution. Not before.
+**Companion repository:**
+[the-gun-skillset-router](https://github.com/indicaindependent/the-gun-skillset-router) is
+the visual showcase of the 24-chamber routing system — diagrams rather than architecture. It
+keeps its own name, because it documents the *pattern* rather than belonging to an agent.
 
 ---
 
