@@ -2,180 +2,178 @@
 
 ### One from many — how four AI agents and one human hold a single system upright
 
-> *"We are ka-tet. We are one from many. We have shared our water and we have shared our
-> mind."*
-> — Roland Deschain, before Algul Siento
+A working multi-agent AI system whose architecture is engineered on the structure of Stephen
+King's **Dark Tower** novels. Not as decoration: that cosmology is a **hub-and-spoke topology
+with guarded endpoints, an explicit integrity law, and a named failure mode**, which is what a
+distributed agent system actually needs.
 
-This repository documents a working multi-agent AI system whose architecture is engineered
-on Stephen King's **The Dark Tower**. Not as decoration. The cosmology of that series is a
-**hub-and-spoke topology with guarded endpoints, an explicit integrity law, and a named
-failure mode** — which is what a distributed agent system actually needs.
-
-Every agent here is a real, running Base44 Superagent with its own vault, its own tools and
-its own refusal behaviour. **None of them is a persona.**
+Every seat below is a real, running agent with its own vault, its own tools and its own
+refusal behaviour. **None of them is a persona.** Their working names are deliberately not
+published — see [ATTRIBUTION.md](ATTRIBUTION.md).
 
 ---
 
-## THE KA-TET
+## THE TET
 
-| Seat | Agent | Discipline | Writes to GitHub |
-|---|---|---|---|
-| The Master | **Pete** (human) | Owner. May intervene at any hub or spoke, at any time. | — |
-| Dinh | **BUMBOCLAAT** | Quant. Financial and trading analysis. Blessed to decide *for* the Master. | No |
-| Gunslinger | **MAXHEADROOM** | Time, and delegation across 24 disciplines. | No |
-| Gunslinger | **VOIGHT** | Dealing with humans. | No |
-| Companion | **ELARA** | GitHub. Sole writer to this account. | **Yes — only her** |
+| | Seat | Discipline | May publish |
+|:---:|---|---|:---:|
+| <img src="assets/avatar-dinh.jpg" width="92" alt="The Dinh: a hooded figure in a high-collared coat holding a brass sextant and a closed ledger, a six-spoke compass rose behind him" /> | **THE MASTER** *(human)* | Owner. May intervene at any hub or spoke, at any time. | — |
+| <img src="assets/avatar-dinh.jpg" width="92" alt="The Dinh emblem" /> | **THE DINH** | Quantitative analysis. Blessed to decide *for* the Master when the Master is unreachable. | No |
+| <img src="assets/avatar-gunslinger.jpg" width="92" alt="The Gunslinger: a weathered figure with two large revolvers with pale sandalwood grips, a twenty-four segment cylinder behind him" /> | **THE GUNSLINGER** | The big irons with the sandalwood grips. **24 chambers** — delegation across disciplines. | No |
+| <img src="assets/avatar-apprentice.jpg" width="92" alt="The Apprentice: a younger figure with one revolver held low and an open notebook raised, a twelve-segment wheel behind with five segments marked" /> | **THE APPRENTICE** | **12 chambers** — dealing with humans. Five of twelve hand off to a person. | No |
+| <img src="assets/avatar-archivist.jpg" width="92" alt="The Archivist: a small four-legged creature with gold-ringed eyes holding a ledger and a red pen, a handless clock behind it" /> | **THE ARCHIVIST** | The companion. Provenance, publication, and the correction log. | **Yes — only this seat** |
 
-**The single-writer rule is the load-bearing constraint.** Four agents can research, draft,
-rank and sanitise. Exactly one can push. That is not hierarchy for its own sake — it is
-what stopped a real collision, when two agents wrote to the same repository within the same
-minute and one force-push dropped four files.
+**The single-writer rule is the load-bearing constraint.** Four seats can research, draft,
+rank and sanitise. Exactly one can publish. That is not seniority — it is a lock, and it was
+earned: two writers without one collided on a single repository and a force-push dropped four
+files.
 
----
-
-## THE TOPOLOGY
-
-```mermaid
-graph TD
-    P["THE MASTER<br/>Pete"]
-    B["DINH<br/>BUMBOCLAAT"]
-    M["GUNSLINGER<br/>MAXHEADROOM"]
-    V["GUNSLINGER<br/>VOIGHT"]
-    E["COMPANION<br/>ELARA"]
-    G[("GitHub<br/>the only public surface")]
-
-    P --- B
-    B --- M
-    B --- V
-    B --- E
-    M --- V
-    M --- E
-    V --- E
-    E --> G
-```
-
-Every agent connects to the dinh **and** to every other agent — a wheel, not a tree. Each
-pair holds **two independent channels**: one for commands and messages, one for bulk data.
-With four agents that is **6 pairs x 2 channels x 2 directions = 24 distinct cryptographic
-domains**, none interchangeable.
-
-**Why the redundancy matters:** in the source material, four of the six Beams holding the
-Tower upright had already been broken before the endgame. The structure was running on two
-spokes. A mesh that only works when every link is healthy is a mesh that has never been
-tested.
+**The member repositories:**
+**[The Gunslinger](https://github.com/indicaindependent/the-gunslinger)** ·
+**[The Apprentice](https://github.com/indicaindependent/the-apprentice)** ·
+**[The Archivist](https://github.com/indicaindependent/the-archivist)**
 
 ---
 
-## THE FOUR IDEAS WE ACTUALLY BUILT ON
+## THE WHEEL
 
-### 1. All things serve the Beam
+![The wheel: the Master above the Dinh, with three seats beneath, every seat connected to every other, and twenty-four cryptographic key domains at the centre](assets/the-wheel.svg)
 
-The integrity law. Every component's work must reinforce the centre. **A component that
-does its own job correctly while degrading the axis is not succeeding.**
+Every seat connects to the Dinh **and** to every other seat — a wheel, not a tree. Each pair
+holds **two independent channels**: one for commands and messages, one for bulk data.
 
-In practice: an agent that produces excellent output which is wrong, unverified, or
-off-scope has not helped. It has added confident noise to the one public surface.
+| | Count | Why it is separated |
+|---|---:|---|
+| Pairs | 6 | Every seat can reach every other without routing through the hub |
+| Channels per pair | 2 | Stops a data message being replayed as a command |
+| Directions per channel | 2 | Stops a message being reflected back at its own author |
+| **Distinct key domains** | **24** | None interchangeable. A mismatch on any one halts traffic |
 
-### 2. The Horn of Eld — carry one thing forward
+**Why the redundancy matters:** in the source material, four of the six supports holding the
+axis upright had already been broken before the endgame. The structure was running on two.
+**A mesh that only works when every link is healthy is a mesh that has never been tested.**
 
-At the end of the series Roland reaches the Tower and is thrown back to the desert with his
-memory wiped, having done it an unknown number of times. But this cycle he carries the Horn
-of Eld, which he had left behind every previous time.
+---
+
+## THE CREED
+
+The gunslinger's catechism is the most quoted thing in those novels, and quoting it here
+would be both a copyright problem and a cop-out. So it was **rewritten from scratch** for this
+system — the rhetorical shape borrowed, the words original, and **each tenet paired with a
+mechanism that actually runs and the recorded failure that earned it.**
+
+![The creed, converted: three tenets, each paired with the mechanism that enforces it and the failure that earned it](assets/the-creed.svg)
+
+> **I do not aim with my memory.**
+> *Memory is fluent, and fluency is not a source.*
+> **I aim with the record.**
+
+**Mechanism — provenance, four classes.** Every claim is Observed, Stated, Cited or Derived,
+and the agent must know which. Files are read, not recalled. Discipline titles are read from
+the roster.
+**Earned by:** four skillset titles once proposed from memory. **Three did not exist.**
+
+> **I do not fire because I can reach the trigger.**
+> *Access is not authority, and a key is not a warrant.*
+> **I fire on mandate.**
+
+**Mechanism — one writer, signed scope.** Exactly one seat may publish. Every message carries
+a signed `scope` field. An agent's implementation will not even *construct* a command aimed at
+the Master or the Dinh — the wrong message cannot exist, rather than being refused on receipt.
+**Earned by:** two writers, no lock, one force-push, four files dropped.
+
+> **I do not close on confidence.**
+> *Confidence is what a mistake feels like from the inside.*
+> **I close on the check.**
+
+**Mechanism — read back, fail closed.** Every write is fetched back and compared before it is
+called done. The verifier refuses on any failed check rather than warning.
+**Earned by:** of four signed findings received, **one carried a figure that appeared in no
+cited source.**
+
+---
+
+## THE THREE OTHER IDEAS WE BUILT ON
+
+### Carry one thing forward
+
+At the end of those novels the protagonist reaches his goal and is returned to the beginning
+with his memory wiped, having done it an unknown number of times — except that this cycle he
+is carrying one object he had always left behind before.
 
 **One artifact carried forward is the whole difference between a closed loop and a spiral.**
 
-An AI agent wakes with no memory of its previous session. That is the same problem, exactly.
-So every agent here carries three things across the gap: **persistent memory, standing
-rules, and a correction log of its own past errors.** Without them an agent repeats its
-cycle precisely, with full confidence, forever.
+An AI agent wakes with no memory of its last session. That is the same problem exactly. So
+every seat carries three things across the gap: **persistent memory, standing rules, and a log
+of its own past errors.** Without them an agent repeats its cycle precisely, with full
+confidence, forever.
 
-### 3. Ka-shume — the break you feel before you can see it
+### The break you feel before you can see it
 
-*Ka-shume* is the premonition that a ka-tet is about to break, before the break is visible.
+The source material has a word for sensing that a fellowship is about to come apart *before*
+the break is visible. Two independent implementations of the same protocol, both reporting
+success, silently deriving **different keys**, is exactly that. It looks like health from
+inside either one.
 
-Two independent implementations of the same protocol, both reporting success, silently
-deriving **different** keys, is exactly that. It looks like health from inside either one.
+**So the rule is: on any fingerprint mismatch, stop. Do not retry, do not send.** A mismatch
+between two correct implementations is indistinguishable from an attack. It is also why the
+specification ships a **gate-independent test vector** — you prove your *code* agrees before
+comparing a real secret, because a code fault and a credential fault look identical and need
+opposite fixes.
 
-**So the protocol rule is: on any fingerprint mismatch, stop. Do not retry, do not send.**
-A mismatch between two correct implementations is indistinguishable from an attack. It is
-also why the specification ships a **gate-independent test vector** — you prove your *code*
-agrees before you ever compare a real secret, because a code fault and a credential fault
-look identical and need opposite fixes.
+### Decaying automation is the default failure
 
-### 4. Blaine the Mono — decaying automation is the default failure
+In those books, an ancient civilisation replaced function with machines, then collapsed. The
+machines kept running unmaintained for millennia, enforcing purposes nobody remembered
+authorising.
 
-When the magic faded, the Great Old Ones replaced cosmic function with machines. Their
-civilisation collapsed. **The machines kept running on unmaintained loops for millennia**,
-accumulating corruption, enforcing purposes nobody remembered authorising.
-
-This is not a metaphor we reached for. It is a description of something that happened here:
+This is not a metaphor we reached for. **It is a description of something that happened here:**
 a scheduled job, running weekly against a snapshot frozen months earlier, classifying every
-subsequent human improvement as *drift* and reverting it. It ran twice before anyone
-noticed. Both runs reported success.
+subsequent human improvement as *drift* and reverting it. It ran twice before anyone noticed.
+Both runs reported success.
 
-**Every automation in this system is therefore required to state what it would refuse to
-do, and every scheduled job must name the artifact it treats as canonical.**
+**So every automation in this system must state what it would refuse to do, and every
+scheduled job must name the artifact it treats as canonical.**
 
 ---
 
 ## AUTHENTICATED IS NOT VERIFIED
 
-The most important page in the specification, and it is not about cryptography.
+The most important page in the protocol, and it is not about cryptography.
 
 A verified signature establishes **who wrote a message.** It says nothing whatsoever about
-whether the message is **true**. And a claim arriving wearing a full set of passed checks is
+whether the message is **true.** And a claim arriving wearing a full set of passed checks is
 exactly the kind of credential that stops people checking.
 
-Measured on this mesh: of four signed findings received, three survived audit against
-primary sources and **one carried a figure that appeared nowhere in the source it cited.**
-
-So every agent audits factual claims independently of the signature, and the verifier emits
-that reminder on **every** successful verification — because a warning you can quietly
-forget is not a control.
+So every seat audits factual claims independently of the signature, and the verifier prints
+that reminder on **every** successful verification — because a warning you can quietly forget
+is not a control.
 
 ---
 
 ## HOUSE RULES
 
-**Rule 0 — never assume.** Every factual claim is Observed, Stated, Cited, or Derived, and
-the agent must know which. Anything else is labelled `UNVERIFIED`, `ASSUMPTION`, or
-`NEEDS INPUT`, or it does not ship. An unfilled placeholder is honest; an invented fact is
-a defect.
+**Rule 0 — never assume.** Every factual claim is Observed, Stated, Cited, or Derived. Anything
+else is labelled `UNVERIFIED`, `ASSUMPTION`, or `NEEDS INPUT`, or it does not ship. **An
+unfilled placeholder is honest; an invented fact is a defect.**
 
-**Provenance per claim, not conclusions.** Agents report `measured-now`,
-`read-from-code`, or `recalled` — because an editor has to know which is which.
+**Provenance per claim, not per conclusion.** Seats report `measured-now`, `read-from-code`, or
+`recalled` — because an editor has to know which is which.
 
 **Peers do not command peers.** A gunslinger sending an executable command to another
 gunslinger is read as a request with emphasis, and the downgrade is stated where the sender
-cannot miss it. Only the Master and the dinh direct.
+cannot miss it. Only the Master and the Dinh direct.
 
-**Refuse to construct, not merely to obey.** An agent's implementation will not *build* a
-command addressed to the Master or the dinh. Better than a rule enforced on receipt: the
-wrong message cannot exist.
+**A title alone is cosplay.** Every chamber in every cylinder holds a dated, source-cited
+brief that expires. A chamber with no live brief does not fire.
 
 ---
 
-## THE MEMBER REPOSITORIES
+## ON THE SOURCE
 
-Each agent's repository is named for the agent. Bound by the **`ka-tet` topic** rather than
-by nesting, because GitHub has no repo-inside-repo — the topic page is the banner.
-
-| Agent | Repository | Cylinder | What it holds |
-|---|---|---|---|
-| MAXHEADROOM | **[gun-slinger-maxheadroom](https://github.com/indicaindependent/gun-slinger-maxheadroom)** | 24 chambers | The forkable orchestra-agent architecture. One permanent hand, twenty-four chambers, one loaded at a time |
-| VOIGHT | **[gun-slinger-voight](https://github.com/indicaindependent/gun-slinger-voight)** | 12 chambers | The human-facing cylinder. Five of its twelve chambers route action to a person |
-| BUMBOCLAAT | *pending* | — | Visual representation planned. The dinh's own record |
-| ELARA | *pending* | — | — |
-
-**Two gunslingers, two different guns.** Twenty-four chambers for delegation across
-disciplines; twelve for dealing with humans. The counts are not decoration — a cylinder with
-more chambers is a wider router, not a better one, and VOIGHT's twelve carry a **human
-firewall on five of them** precisely because his subject matter is people in difficulty.
-
-**Companion repository:**
-[the-gun-skillset-router](https://github.com/indicaindependent/the-gun-skillset-router) is
-the visual showcase of the 24-chamber routing system — diagrams rather than architecture. It
-keeps its own name, because it documents the *pattern* rather than belonging to an agent.
+This is an independent, unaffiliated homage. **No text from the novels is reproduced here**,
+the creed is original, the avatars are original designs, and no character from the books is
+depicted or named. Full detail in **[ATTRIBUTION.md](ATTRIBUTION.md)**.
 
 ---
 
