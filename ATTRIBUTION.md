@@ -23,7 +23,7 @@ them.
 
 **Not borrowed: the characters.** The avatars are original designs. No character from the
 novels is depicted, named, or described. The agents are deliberately unnamed and appear only
-as functional seats: the Master, the Dinh, the Gunslinger, the Apprentice, the Archivist.
+as functional seats: the Master, the Dinh, the two Gunslingers, the Archivist.
 
 ## Why the agents are anonymous
 
