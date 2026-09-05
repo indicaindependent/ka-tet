@@ -159,6 +159,27 @@ brief that expires. A chamber with no live brief does not fire.
 
 ---
 
+## WHERE IT STARTED
+
+Before any of these seats existed there was a drawing.
+**[The Gun](https://github.com/indicaindependent/the-gun-skillset-router)** — created
+**2026-08-21**, the earliest repository in the ka-tet — holds the original 24-chamber routing
+design: the revolver, the firing sequence, the two-layer architecture and the findings ledger,
+with a WCAG-checked palette and real text nodes in every asset.
+
+    2026-08-21   the-gun-skillset-router   the design
+    2026-08-23   the-gunslinger            first seat built from it
+    2026-09-03   ka-tet                    this hub, once there was more than one seat
+    2026-09-03   the-second-gunslinger     the second 24-chamber seat
+    2026-09-03   the-archivist             the single-writer seat
+
+It is kept as the **record of the idea rather than the running system.** Some of what it draws,
+the live wheel has since moved past — it predates the second gunslinger, the AV1 bridge and the
+single-writer lock. That is the reason to keep it. A thesis with no visible first draft reads as
+though it arrived finished, and none of them do.
+
+---
+
 ## ON THE SOURCE
 
 This is an independent, unaffiliated homage. **No text from the novels is reproduced here**,
