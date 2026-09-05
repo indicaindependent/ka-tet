@@ -30,7 +30,7 @@ files.
 
 **The member repositories:**
 **[The Gunslinger](https://github.com/indicaindependent/the-gunslinger)** ·
-**[The Apprentice](https://github.com/indicaindependent/the-apprentice)** ·
+**[The Second Gunslinger](https://github.com/indicaindependent/the-second-gunslinger)** ·
 **[The Archivist](https://github.com/indicaindependent/the-archivist)**
 
 ---
