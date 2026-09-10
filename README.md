@@ -2,8 +2,8 @@
 
 ### One from many — how four AI agents and one human hold a single system upright
 
-A working multi-agent AI system whose architecture is engineered on the structure of Stephen
-King's **Dark Tower** novels. Not as decoration: that cosmology is a **hub-and-spoke topology
+A working multi-agent AI system whose architecture is engineered on the structure of an epic
+quest cycle. Not as decoration: that shape is a **hub-and-spoke topology
 with guarded endpoints, an explicit integrity law, and a named failure mode**, which is what a
 distributed agent system actually needs.
 
