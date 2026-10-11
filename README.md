@@ -1,6 +1,6 @@
 # KA-TET FOR ORCHESTRAL AGENTIC AI
 
-### One from many — how four AI agents and one human hold a single system upright
+### One from many — how five AI agents and one human hold a single system upright
 
 A working multi-agent AI system whose architecture is engineered on the structure of an epic
 quest cycle. Not as decoration: that shape is a **hub-and-spoke topology
@@ -22,8 +22,9 @@ published — see [ATTRIBUTION.md](ATTRIBUTION.md).
 | <img src="assets/avatar-gunslinger.jpg" width="92" alt="The Gunslinger: a weathered figure with two large revolvers with pale sandalwood grips, a twenty-four segment cylinder behind him" /> | **THE GUNSLINGER** | The big irons with the sandalwood grips. **24 chambers** — delegation across disciplines. | No |
 | <img src="assets/avatar-second-gunslinger.png" width="92" alt="The Second Gunslinger: a composed figure in a dark high-collared coat, eyes measuring the viewer, against a solid dark background" /> | **THE SECOND GUNSLINGER** | **24 chambers** — dealing with humans. Seven of twenty-four fail closed. | No |
 | <img src="assets/avatar-archivist.jpg" width="92" alt="The Archivist: a small four-legged creature with gold-ringed eyes holding a ledger and a red pen, a handless clock behind it" /> | **THE ARCHIVIST** | The companion. Provenance, publication, and the correction log. | **Yes — only this seat** |
+| <img src="assets/avatar-balladeer.png" width="92" alt="The Balladeer: the seat portrait, drawn in flat shapes on a solid dark ground" /> | **THE BALLADEER** | Production: prompt engineering, music, video, story and the pipelines behind them. **27 chambers**, four fail closed. | No |
 
-**The single-writer rule is the load-bearing constraint.** Four seats can research, draft,
+**The single-writer rule is the load-bearing constraint.** Five seats can research, draft,
 rank and sanitise. Exactly one can publish. That is not seniority — it is a lock, and it was
 earned: two writers without one collided on a single repository and a force-push dropped four
 files.
@@ -31,7 +32,8 @@ files.
 **The member repositories:**
 **[The Gunslinger](https://github.com/indicaindependent/the-gunslinger)** ·
 **[The Second Gunslinger](https://github.com/indicaindependent/the-second-gunslinger)** ·
-**[The Archivist](https://github.com/indicaindependent/the-archivist)**
+**[The Archivist](https://github.com/indicaindependent/the-archivist)** ·
+**[The Balladeer](https://github.com/indicaindependent/the-balladeer)**
 
 ---
 
@@ -52,6 +54,10 @@ holds **two independent channels**: one for commands and messages, one for bulk 
 **Why the redundancy matters:** in the source material, four of the six supports holding the
 axis upright had already been broken before the endgame. The structure was running on two.
 **A mesh that only works when every link is healthy is a mesh that has never been tested.**
+
+The wheel and the counts above are drawn for the seats that existed on 2026-09-03. **The Balladeer
+joined on 2026-10-11** and, as of that date, reaches the other seats through the Archivist until its
+own direct links are built.
 
 ---
 
@@ -172,6 +178,7 @@ with a WCAG-checked palette and real text nodes in every asset.
     2026-09-03   ka-tet                    this hub, once there was more than one seat
     2026-09-03   the-second-gunslinger     the second 24-chamber seat
     2026-09-03   the-archivist             the single-writer seat
+    2026-10-11   the-balladeer             the production seat
 
 It is kept as the **record of the idea rather than the running system.** Some of what it draws,
 the live wheel has since moved past — it predates the second gunslinger, the AV1 bridge and the
