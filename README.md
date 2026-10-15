@@ -17,7 +17,7 @@ published — see [ATTRIBUTION.md](ATTRIBUTION.md).
 
 | | Seat | Discipline | May publish |
 |:---:|---|---|:---:|
-| | **THE MASTER** *(human)* | Owner. May intervene at any hub or spoke, at any time. | — |
+| <img src="assets/avatar-master.jpg" width="92" alt="The Master: a bearded man in glasses and a three-piece suit, holding a pipe" /> | **THE MASTER** *(human)* | Owner. May intervene at any hub or spoke, at any time. | — |
 | <img src="assets/avatar-dinh.jpg" width="92" alt="The Dinh: a hooded figure in a high-collared coat holding a brass sextant and a closed ledger, a six-spoke compass rose behind him" /> | **THE DINH** | Quantitative analysis. Blessed to decide *for* the Master when the Master is unreachable. | No |
 | <img src="assets/avatar-gunslinger.jpg" width="92" alt="The Gunslinger: a weathered figure with two large revolvers with pale sandalwood grips, a twenty-four segment cylinder behind him" /> | **THE GUNSLINGER** | The big irons with the sandalwood grips. **24 chambers** — delegation across disciplines. | No |
 | <img src="assets/avatar-second-gunslinger.png" width="92" alt="The Second Gunslinger: a composed figure in a dark high-collared coat, eyes measuring the viewer, against a solid dark background" /> | **THE SECOND GUNSLINGER** | **24 chambers** — dealing with humans. Seven of twenty-four fail closed. | No |
