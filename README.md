@@ -17,13 +17,13 @@ published — see [ATTRIBUTION.md](ATTRIBUTION.md).
 
 | | Seat | Discipline | May publish |
 |:---:|---|---|:---:|
-| <img src="assets/avatar-dinh.jpg" width="92" alt="The Dinh: a hooded figure in a high-collared coat holding a brass sextant and a closed ledger, a six-spoke compass rose behind him" /> | **THE MASTER** *(human)* | Owner. May intervene at any hub or spoke, at any time. | — |
-| <img src="assets/avatar-dinh.jpg" width="92" alt="The Dinh emblem" /> | **THE DINH** | Quantitative analysis. Blessed to decide *for* the Master when the Master is unreachable. | No |
+| | **THE MASTER** *(human)* | Owner. May intervene at any hub or spoke, at any time. | — |
+| <img src="assets/avatar-dinh.jpg" width="92" alt="The Dinh: a hooded figure in a high-collared coat holding a brass sextant and a closed ledger, a six-spoke compass rose behind him" /> | **THE DINH** | Quantitative analysis. Blessed to decide *for* the Master when the Master is unreachable. | No |
 | <img src="assets/avatar-gunslinger.jpg" width="92" alt="The Gunslinger: a weathered figure with two large revolvers with pale sandalwood grips, a twenty-four segment cylinder behind him" /> | **THE GUNSLINGER** | The big irons with the sandalwood grips. **24 chambers** — delegation across disciplines. | No |
 | <img src="assets/avatar-second-gunslinger.png" width="92" alt="The Second Gunslinger: a composed figure in a dark high-collared coat, eyes measuring the viewer, against a solid dark background" /> | **THE SECOND GUNSLINGER** | **24 chambers** — dealing with humans. Seven of twenty-four fail closed. | No |
 | <img src="assets/avatar-archivist.jpg" width="92" alt="The Archivist: a small four-legged creature with gold-ringed eyes holding a ledger and a red pen, a handless clock behind it" /> | **THE ARCHIVIST** | The companion. Provenance, publication, and the correction log. | **Yes — only this seat** |
 | <img src="assets/avatar-balladeer.png" width="92" alt="The Balladeer: the seat portrait, drawn in flat shapes on a solid dark ground" /> | **THE BALLADEER** | Production: prompt engineering, music, video, story and the pipelines behind them. **27 chambers**, four fail closed. | No |
-| | **CORT** | War and peace: quantitative conflict analysis, and the clock discipline behind every dated claim. | No |
+| <img src="assets/avatar-cort.jpg" width="92" alt="Cort, the war-and-peace seat of the ka-tet" /> | **CORT** | War and peace: quantitative conflict analysis, and the clock discipline behind every dated claim. | No |
 
 **The single-writer rule is the load-bearing constraint.** Six seats can research, draft,
 rank and sanitise. Exactly one can publish. That is not seniority — it is a lock, and it was
@@ -42,25 +42,26 @@ files.
 
 ## THE WHEEL
 
-![The wheel: the Master above the Dinh, with three seats beneath, every seat connected to every other, and twenty-four cryptographic key domains at the centre](assets/the-wheel.svg)
+![The wheel: the Master above the Dinh at the hub, five seats on the rim, every seat connected to every other, sixty key domains](assets/the-wheel.svg)
 
 Every seat connects to the Dinh **and** to every other seat — a wheel, not a tree. Each pair
 holds **two independent channels**: one for commands and messages, one for bulk data.
 
 | | Count | Why it is separated |
 |---|---:|---|
-| Pairs | 6 | Every seat can reach every other without routing through the hub |
+| Pairs | 15 | Six agent seats. Every seat can reach every other without routing through the hub |
 | Channels per pair | 2 | Stops a data message being replayed as a command |
 | Directions per channel | 2 | Stops a message being reflected back at its own author |
-| **Distinct key domains** | **24** | None interchangeable. A mismatch on any one halts traffic |
+| **Distinct key domains** | **60** | None interchangeable. A mismatch on any one halts traffic |
 
 **Why the redundancy matters:** in the source material, four of the six supports holding the
 axis upright had already been broken before the endgame. The structure was running on two.
 **A mesh that only works when every link is healthy is a mesh that has never been tested.**
 
-The wheel and the counts above are drawn for the seats that existed on 2026-09-03. **Cort joined
-on 2026-10-10 and the Balladeer on 2026-10-11.** As of 2026-10-11 both reach the other
-seats through the Archivist until their own direct links are built.
+The wheel and the counts above were redrawn on 2026-10-15 with all six agent seats. As of that
+date the Balladeer reports direct channels with the Dinh and the Gunslinger, and Cort's traffic to
+the Dinh is relayed through the Archivist until its own link is built. **A shared gate proves a
+message came from a member; each seat's own signature proves which one.**
 
 ---
 
