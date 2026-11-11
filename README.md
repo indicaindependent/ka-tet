@@ -2,8 +2,8 @@
 
 ### One from many — how six AI agents and one human hold a single system upright
 
-A working multi-agent AI system whose architecture is engineered on the structure of an epic
-quest cycle. Not as decoration: that shape is a **hub-and-spoke topology
+A working **multi-agent system** built around three **Multi-Agent Orchestrators (MAOs)**, with a
+human in the loop and an architecture engineered on the structure of an epic quest cycle. Not as decoration: that shape is a **hub-and-spoke topology
 with guarded endpoints, an explicit integrity law, and a named failure mode**, which is what a
 distributed agent system actually needs.
 
@@ -17,13 +17,13 @@ published — see [ATTRIBUTION.md](ATTRIBUTION.md).
 
 | | Seat | Discipline | May publish |
 |:---:|---|---|:---:|
-| <img src="assets/avatar-master.jpg" width="92" alt="The Master: a bearded man in glasses and a three-piece suit, holding a pipe" /> | **THE MASTER** *(human)* | Owner. May intervene at any hub or spoke, at any time. | — |
-| <img src="assets/avatar-dinh.jpg" width="92" alt="The Dinh: a hooded figure in a high-collared coat holding a brass sextant and a closed ledger, a six-spoke compass rose behind him" /> | **THE DINH** | Quantitative analysis. Blessed to decide *for* the Master when the Master is unreachable. | No |
-| <img src="assets/avatar-gunslinger.jpg" width="92" alt="The Gunslinger: a weathered figure with two large revolvers with pale sandalwood grips, a twenty-four segment cylinder behind him" /> | **THE GUNSLINGER** | **Multi-Agent Orchestrator.** The big irons with the sandalwood grips. **24 chambers** — delegation across disciplines. | No |
-| <img src="assets/avatar-second-gunslinger.png" width="92" alt="The Second Gunslinger: a composed figure in a dark high-collared coat, eyes measuring the viewer, against a solid dark background" /> | **THE SECOND GUNSLINGER** | **24 chambers** — dealing with humans. Seven of twenty-four fail closed. | No |
-| <img src="assets/avatar-archivist.jpg" width="92" alt="The Archivist: a small four-legged creature with gold-ringed eyes holding a ledger and a red pen, a handless clock behind it" /> | **THE ARCHIVIST** | The companion. Provenance, publication, and the correction log. | **Yes — only this seat** |
-| <img src="assets/avatar-balladeer.png" width="92" alt="The Balladeer: the seat portrait, drawn in flat shapes on a solid dark ground" /> | **THE BALLADEER** | Production: prompt engineering, music, video, story and the pipelines behind them. **27 chambers**, four fail closed. | No |
-| <img src="assets/avatar-cort.jpg" width="92" alt="Cort, the war-and-peace seat of the ka-tet" /> | **CORT** | War and peace: quantitative conflict analysis, and the clock discipline behind every dated claim. | No |
+| <img src="assets/avatar-master.jpg" width="92" alt="The Master: a bearded man in glasses and a three-piece suit, holding a pipe" /> | **THE MASTER** *(human)* | Owner and **human in the loop**. May intervene at any hub or spoke, at any time. | — |
+| <img src="assets/avatar-dinh.jpg" width="92" alt="The Dinh: a hooded figure in a high-collared coat holding a brass sextant and a closed ledger, a six-spoke compass rose behind him" /> | **THE DINH** | **Specialist agent:** quantitative analysis. Holds **delegated authority** to decide *for* the Master when the Master is unreachable. | No |
+| <img src="assets/avatar-gunslinger.jpg" width="92" alt="The Gunslinger: a weathered figure with two large revolvers with pale sandalwood grips, a twenty-four segment cylinder behind him" /> | **THE GUNSLINGER** | **Multi-Agent Orchestrator.** The big irons with the sandalwood grips. Routes delegated work across **24 specialist chambers**, one mounted at a time. | No |
+| <img src="assets/avatar-second-gunslinger.png" width="92" alt="The Second Gunslinger: a composed figure in a dark high-collared coat, eyes measuring the viewer, against a solid dark background" /> | **THE SECOND GUNSLINGER** | **Multi-Agent Orchestrator, human-facing.** **24 chambers** for dealing with people. Seven of twenty-four fail closed and escalate to a human. | No |
+| <img src="assets/avatar-archivist.jpg" width="92" alt="The Archivist: a small four-legged creature with gold-ringed eyes holding a ledger and a red pen, a handless clock behind it" /> | **THE ARCHIVIST** | **Specialist agent:** the companion. Provenance, publication and the correction log. The **single-writer gate**. | **Yes — only this seat** |
+| <img src="assets/avatar-balladeer.png" width="92" alt="The Balladeer: the seat portrait, drawn in flat shapes on a solid dark ground" /> | **THE BALLADEER** | **Multi-Agent Orchestrator, production.** Prompt engineering, music, video, story and the pipelines behind them. **27 chambers**, four fail closed. | No |
+| <img src="assets/avatar-cort.jpg" width="92" alt="Cort, the war-and-peace seat of the ka-tet" /> | **CORT** | **Specialist agent:** war and peace. Quantitative conflict analysis, and the clock discipline behind every dated claim. | No |
 
 **The single-writer rule is the load-bearing constraint.** Six seats can research, draft,
 rank and sanitise. Exactly one can publish. That is not seniority — it is a lock, and it was
@@ -33,9 +33,9 @@ files.
 **The member repositories:**
 **[The Dinh](https://github.com/indicaindependent/the-dinh)** ·
 **[The Gunslinger · Multi-Agent Orchestrator](https://github.com/indicaindependent/gunslinger-multi-agent-orchestrator)** ·
-**[The Second Gunslinger](https://github.com/indicaindependent/the-second-gunslinger)** ·
+**[The Second Gunslinger · Multi-Agent Orchestrator](https://github.com/indicaindependent/second-gunslinger-multi-agent-orchestrator)** ·
 **[The Archivist](https://github.com/indicaindependent/the-archivist)** ·
-**[The Balladeer](https://github.com/indicaindependent/the-balladeer)** ·
+**[The Balladeer · Multi-Agent Orchestrator](https://github.com/indicaindependent/the-balladeer)** ·
 **[Cort](https://github.com/indicaindependent/the-cort)**
 
 ---
@@ -177,14 +177,14 @@ Before any of these seats existed there was a drawing.
 design of the Multi-Agent Orchestrator: the revolver, the firing sequence, the two-layer architecture and the findings ledger,
 with a WCAG-checked palette and real text nodes in every asset.
 
-    2026-08-21   the-gun-skillset-router               the design
-    2026-08-23   gunslinger-multi-agent-orchestrator   first seat built from it
-    2026-09-03   ka-tet                                this hub, once there was more than one seat
-    2026-09-03   the-second-gunslinger                 the second 24-chamber seat
-    2026-09-03   the-archivist                         the single-writer seat
-    2026-10-11   the-balladeer                         the production seat
-    2026-10-11   the-dinh                              the seat beneath the Master
-    2026-10-11   the-cort                              the war-and-peace seat
+    2026-08-21   the-gun-skillset-router                      the design
+    2026-08-23   gunslinger-multi-agent-orchestrator          first seat built from it
+    2026-09-03   ka-tet                                       this hub, once there was more than one seat
+    2026-09-03   second-gunslinger-multi-agent-orchestrator   the second 24-chamber seat
+    2026-09-03   the-archivist                                the single-writer seat
+    2026-10-11   the-balladeer                                the production seat
+    2026-10-11   the-dinh                                     the seat beneath the Master
+    2026-10-11   the-cort                                     the war-and-peace seat
 
 It is kept as the **record of the idea rather than the running system.** Some of what it draws,
 the live wheel has since moved past — it predates the second gunslinger, the AV1 bridge and the
