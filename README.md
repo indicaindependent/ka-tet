@@ -23,7 +23,7 @@ published — see [ATTRIBUTION.md](ATTRIBUTION.md).
 | <img src="assets/avatar-second-gunslinger.png" width="92" alt="The Second Gunslinger: a composed figure in a dark high-collared coat, eyes measuring the viewer, against a solid dark background" /> | **THE SECOND GUNSLINGER** | **Multi-Agent Orchestrator, human-facing.** **24 chambers** for dealing with people. Seven of twenty-four fail closed and escalate to a human. | No |
 | <img src="assets/avatar-archivist.jpg" width="92" alt="The Archivist: a small four-legged creature with gold-ringed eyes holding a ledger and a red pen, a handless clock behind it" /> | **THE ARCHIVIST** | **Specialist agent:** the companion. Provenance, publication and the correction log. The **single-writer gate**. | **Yes — only this seat** |
 | <img src="assets/avatar-balladeer.png" width="92" alt="The Balladeer: the seat portrait, drawn in flat shapes on a solid dark ground" /> | **THE BALLADEER** | **Multi-Agent Orchestrator, production.** Prompt engineering, music, video, story and the pipelines behind them. **27 chambers**, four fail closed. | No |
-| <img src="assets/avatar-cort.jpg" width="92" alt="Cort, the war-and-peace seat of the ka-tet" /> | **CORT** | **Specialist agent:** war and peace. Quantitative conflict analysis, and the clock discipline behind every dated claim. | No |
+| <img src="assets/avatar-cartographer.jpg" width="92" alt="The Cartographer, the war-and-peace seat of the ka-tet" /> | **THE CARTOGRAPHER** | **Specialist agent:** war and peace. Quantitative conflict analysis, and the clock discipline behind every dated claim. | No |
 
 **The single-writer rule is the load-bearing constraint.** Six seats can research, draft,
 rank and sanitise. Exactly one can publish. That is not seniority — it is a lock, and it was
@@ -36,7 +36,7 @@ files.
 **[The Second Gunslinger · Multi-Agent Orchestrator](https://github.com/indicaindependent/second-gunslinger-multi-agent-orchestrator)** ·
 **[The Archivist](https://github.com/indicaindependent/the-archivist)** ·
 **[The Balladeer · Multi-Agent Orchestrator](https://github.com/indicaindependent/the-balladeer)** ·
-**[Cort](https://github.com/indicaindependent/the-cort)**
+**[The Cartographer](https://github.com/indicaindependent/the-cartographer)**
 
 ---
 
@@ -59,7 +59,7 @@ axis upright had already been broken before the endgame. The structure was runni
 **A mesh that only works when every link is healthy is a mesh that has never been tested.**
 
 The wheel and the counts above were redrawn on 2026-10-15 with all six agent seats. As of that
-date the Balladeer reports direct channels with the Dinh and the Gunslinger, and Cort's traffic to
+date the Balladeer reports direct channels with the Dinh and the Gunslinger, and the Cartographer's traffic to
 the Dinh is relayed through the Archivist until its own link is built. **A shared gate proves a
 message came from a member; each seat's own signature proves which one.**
 
@@ -184,7 +184,7 @@ with a WCAG-checked palette and real text nodes in every asset.
     2026-09-03   the-archivist                                the single-writer seat
     2026-10-11   the-balladeer                                the production seat
     2026-10-11   the-dinh                                     the seat beneath the Master
-    2026-10-11   the-cort                                     the war-and-peace seat
+    2026-10-11   the-cartographer                             the war-and-peace seat
 
 It is kept as the **record of the idea rather than the running system.** Some of what it draws,
 the live wheel has since moved past — it predates the second gunslinger, the AV1 bridge and the
